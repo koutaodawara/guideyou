@@ -1,6 +1,6 @@
-class CreateTweets < ActiveRecord::Migration
+class CreateGuides < ActiveRecord::Migration
   def change
-    create_table :tweets do |t|
+    create_table :guides do |t|
       t.string :text
       t.text :img
       t.integer :user_id

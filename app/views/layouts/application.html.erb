@@ -8,8 +8,9 @@
 </head>
 <body>
 <% if user_signed_in? %>
-  <div class="grid-6"≥
+  <div class="grid-6">
     <%= link_to"ログアウト",destroy_user_session_path,method: :delete %>
+    <%= link_to"投稿する",  new_guide_path,method: :get %>
 <% else %>
   <div class = 'grid-6'>
     <%= link_to"ログイン", new_user_session_path, method: :get %>
