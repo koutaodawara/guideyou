@@ -5,10 +5,14 @@
     </h3>
     <div>
       <%= f.label :image_file, '画像ファイル'%></br>
-      <%= f.file_field :img %>
+      <%= f.file_field :image %>
     </div>
     <div>
       <%= f.text_area :text,placeholder: '本文を入力してください'%>
+    </div>
+    <div>
+      <%= f.label :tag,'タグ付けする'%>
+      <%= text_field_tag 'guide[tag_list]' %>
     </div>
     <input type="submit" value="SENT">
     <% end%>
