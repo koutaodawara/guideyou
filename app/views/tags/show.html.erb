@@ -1,0 +1,6 @@
+  <h2>#<%=Tag.find(params[:id]).name %></h2>
+
+
+  <div class="contents row" >
+  <%= render partial: "tag", collection: @tags %>
+</div>

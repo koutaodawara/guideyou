@@ -1,0 +1,18 @@
+<div>
+  <span class = "name">
+     <a href = "">
+        <%=current_user.nickname %>
+     </a>
+  </span>
+    <p>
+     <%= image_tag "#{tag.image}" %>
+    </p>
+    <a>
+     <%= tag.text %>
+     </a>
+     <a><span>
+     ##
+      <%=tag.tag_list %>
+    </span>
+     </a>
+</div>

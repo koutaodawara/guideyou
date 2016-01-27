@@ -1,6 +1,7 @@
 class Guide < ActiveRecord::Base
   belongs_to :user
-  # acts_as_taggable :tags
+  acts_as_taggable_on :things
+  acts_as_taggable
 
   has_attached_file :image,
                       style: {medium: "300x300", thumb: "100x100#"}

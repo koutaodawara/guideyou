@@ -1,0 +1,16 @@
+<h1>
+  Guideyou
+</h1>
+
+
+<p>
+  <% @tags.each do |tag| %>
+    <%= link_to "#{tag.name}",tag_path(tag) %>
+    <% end %>
+</p>
+
+
+
+<%= link_to '投稿一覧画面へ',guides_path %>
+
+

@@ -25,6 +25,6 @@ class GuidesController < ApplicationController
 
 
   def guides_params
-    params.require(:guide).permit(:text, :image)
+    params.require(:guide).permit(:text, :image).merge(tag_list: params[:guide][:tag])
   end
 end
